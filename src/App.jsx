@@ -1,3 +1,6 @@
+import React from 'react'
+import Rick from './components/Rick';
+import Pokemon from './components/Pokemon';
 import './App.css';
 
 function App() {
@@ -5,8 +8,11 @@ function App() {
   const urlRick = 'https://rickandmortyapi.com/api/character/1';
   
   return (
-    <>
-    </>
+    <div className='container'>
+      <Rick url={ urlRick } />
+      <Pokemon url={ urlPokemon } />
+    
+    </div>
   );
 }
 
